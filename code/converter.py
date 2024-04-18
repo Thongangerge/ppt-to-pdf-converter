@@ -19,11 +19,11 @@ def pdfConverter(sleep_time=2):
             if file.endswith((".pptx", ".ppt")):
                 original_file_path = os.path.join(root, file)
                 new_file_path = os.path.join(original_folder, file)
-                if not os.path.exists(new_file_path): 
+                if not os.path.exists(new_file_path):
                     shutil.copy(original_file_path, new_file_path)
 
     # Scan for files that need to be converted
-    while any(f.endswith((".pptx", ".ppt")) for _, _, files in os.walk(input_folder) for f in files):
+    while any(f.endswith((".pptx", ".ppt")) for f in os.listdir(input_folder)):
         for root, dirs, files in os.walk(input_folder):
             for file in files:
                 sleep(sleep_time)
@@ -45,12 +45,12 @@ def pdfConverter(sleep_time=2):
                         # Close the .ppt file
                         deck.Close()
                         powerpoint.Quit()
-                        print(f'Converted {file} successfully')
+                        print(f'Converted {file} successfully\n')
 
                         # Remove the original file
                         os.remove(in_file)
                     except Exception as e:
-                        print(f'Failed to open {file}, will try again later.\n{e}')
+                        print(f'Failed to open {file}, will try again later.\n{e}\n')
 
     print('No more .ppt or .pptx files found')
 
