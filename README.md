@@ -3,8 +3,8 @@
 This Python script automatically converts PowerPoint files (both `.ppt` and `.pptx`) to PDF format. It recursively scans a specified directory for PowerPoint files and converts each one into a PDF, then copy and store original files into 'original' folder.
 ## Features
 - Converts both `.ppt` and `.pptx` files to PDF.
-- Works recursively through directories.
-- Automatically deletes original PowerPoint files after conversion.
+- Copy PowerPoint files into subfolder.
+- Automatically deletes original PowerPoint files.
 
 ## System Requirements
 - Windows OS (7/8/10/11)
