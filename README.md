@@ -18,6 +18,7 @@ First, ensure that Python and pip are installed on your system. Then, install th
 
 ```bash
 pip install pywin32
+```
 
 # Usage
 
@@ -30,6 +31,7 @@ To use the script, follow these steps:
 
 ```bash
 python pdfConverter.py
+```
 
 # Adjusting Sleep Time
 The sleep_time parameter in the function call can be adjusted depending on your system's specifications. Increase the sleep_time if you experience issues with file access or COM operations, particularly on slower systems or systems with heavy I/O operations.
