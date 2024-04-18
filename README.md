@@ -41,6 +41,7 @@ pdfConverter()
 ![스크린샷 2024-04-18 184436](https://github.com/Thongangerge/ppt-to-pdf-converter/assets/126161416/de8e5e5f-6aed-4b64-8b26-9f1012555702)
 
 4. Wait until the process is finished.
+
 ![스크린샷 2024-04-18 190104](https://github.com/Thongangerge/ppt-to-pdf-converter/assets/126161416/e6e262ab-5c7c-4ea6-b2c8-ad2b1d519cbe)
 
 # Adjusting Sleep Time
@@ -49,7 +50,7 @@ The sleep_time parameter in the function call can be adjusted depending on your 
 ```python
 pdfConverter(sleep_time=5)
 ```
-*sleep_time=10* means that converter will sleep 10 seconds every I/O operations between files. Default value is sleep_time=2.
+*sleep_time=10* means that converter will sleep 10 seconds every I/O operations between files. Default value is *sleep_time=2*.
 
 # Troubleshooting
 - Permission Issues: Ensure you have the necessary permissions to read/write in the directory and that your PowerPoint application allows scripting.
